@@ -1,0 +1,47 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="chart.js" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>chart.js</friendlyName>
+      <description>
+        <![CDATA[Simple HTML5 charts using the canvas element.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>chart.js</libraryName>
+            <fileName>chart.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>yes</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/chart.js@<~=version~>/dist/chart.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>chart.js</libraryFolderName>
+            <jsfile>
+              <name>chart.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\chart.js\<~=versionFolder~></basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
